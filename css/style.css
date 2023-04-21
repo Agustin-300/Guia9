@@ -1,0 +1,85 @@
+* {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+}
+
+h1 {
+  font-family: "Nunito", sans-serif;
+  font-weight: 900;
+  font-size: 22px;
+  color: #ffffff;
+}
+
+h2 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+h2::first-letter {
+  text-transform: capitalize;
+}
+
+h3 {
+  font-family: "Nunito", sans-serif;
+  font-weight: 200;
+  font-size: 12px;
+  color: #E21982;
+  text-transform: uppercase;
+}
+
+body {
+  background-color: #E8E8E8;
+}
+body .module {
+  margin-bottom: 60px;
+}
+body .module .container .custom-padding {
+  padding: 50px 0;
+}
+body .module .container .dropdown-input .form-control {
+  margin-bottom: 15px;
+  padding: 15px 25px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+}
+body .module .container .dropdown-input .form-control::first-letter {
+  text-transform: uppercase;
+}
+body .module .container .ilustration-faqs {
+  display: flex;
+  justify-content: space-around;
+  padding-left: 50px;
+}
+body .module .container .ilustration-faqs .ilustration-faqs__img {
+  max-width: 100%;
+}
+body .banner-secondary {
+  background-image: url(../recursos/banner-secundario.jpg);
+  background-size: cover;
+  padding: 130px 0px;
+}
+body .banner-secondary h1 {
+  margin-top: 30px;
+}
+body .banner-secondary .btn-danger {
+  margin-top: 15px;
+  border-radius: 100px;
+  font-size: 16px;
+  background-color: #E21982;
+  font-family: "Nunito", sans-serif;
+  font-weight: 700;
+}
+body .banner-secondary .btn-danger::first-letter {
+  text-transform: uppercase;
+}
+body .footer {
+  background-color: #22193F;
+}
+body .footer .snippets .nav-item .nav-muted {
+  color: #ffffff !important;
+}
+body .footer .snippets .copyright .copyright__p {
+  font-size: 12px;
+  color: #ffffff;
+}/*# sourceMappingURL=style.css.map */
