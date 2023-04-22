@@ -52,16 +52,10 @@ $color-gray: #e8e8e8;
   background-color: $color-pink;
 }
 
-@mixin contenido-banner {
-  position: absolute;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
 $nunito-bold: "Nunito Bold";
 $nunito-black: "Nunito Black";
 $nunito-extralight: "Nunito ExtraLight";
-$opensans-bold: "Opensans Bold";
+$opensans-bold: "OpenSans Bold";
 $opensans-regular: "OpenSans Regular";
 
 //Imágenes, íconos, logos
@@ -86,11 +80,6 @@ $opensans-regular: "OpenSans Regular";
   margin-left: 50px;
 }
 
-.banner-btn{
-  @include contenido-banner();
-  top: 70%;
-}
-
 .btn:hover {
   background-color: #a43c74;
   color: white;
@@ -102,31 +91,21 @@ $opensans-regular: "OpenSans Regular";
 }
 
 .titulo-banner {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  //@include contenido-banner();
+  //top: 50%;
   font-family: $nunito-black;
   font-size: 40px;
   color: white;
 }
 
 .texto-banner {
-  position: absolute;
-  top: 58%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   font-family: $opensans-regular;
   font-size: 16px;
   color: white;
 }
 
-//Banner-principal
-
-.banner {
-  position: relative;
-  width: 100%;
-  height: auto;
+.quienes-somos{
+  background-color: $color-gray;
 }
 
 //Media Queries

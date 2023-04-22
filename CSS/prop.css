@@ -58,13 +58,6 @@
   margin-left: 50px;
 }
 
-.banner-btn {
-  position: absolute;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  top: 70%;
-}
-
 .btn:hover {
   background-color: #a43c74;
   color: white;
@@ -76,29 +69,19 @@
 }
 
 .titulo-banner {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   font-family: "Nunito Black";
   font-size: 40px;
   color: white;
 }
 
 .texto-banner {
-  position: absolute;
-  top: 58%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   font-family: "OpenSans Regular";
   font-size: 16px;
   color: white;
 }
 
-.banner {
-  position: relative;
-  width: 100%;
-  height: auto;
+.quienes-somos {
+  background-color: #e8e8e8;
 }
 
 @media (max-width: 767.98px) {
