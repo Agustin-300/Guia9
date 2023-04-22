@@ -45,6 +45,19 @@ $color-gray: #e8e8e8;
   src: url("/CSS/fonts/OpenSans-Regular.ttf") format("truetype");
 }
 
+@mixin botones {
+  $nunito-bold: "Nunito Bold";
+  font-size: 16px;
+  color: white;
+  background-color: $color-pink;
+}
+
+@mixin contenido-banner {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 $nunito-bold: "Nunito Bold";
 $nunito-black: "Nunito Black";
 $nunito-extralight: "Nunito ExtraLight";
@@ -64,13 +77,18 @@ $opensans-regular: "OpenSans Regular";
 
 //Fuentes, títulos, botones
 
-.btn {
-  background-color: $color-pink;
-  color: white;
-  font-size: 16px;
+.common-styles {
+  @include botones();
+}
+
+.login-btn {
   width: 100px;
   margin-left: 50px;
-  font-family: $nunito-bold;
+}
+
+.banner-btn{
+  @include contenido-banner();
+  top: 70%;
 }
 
 .btn:hover {
@@ -85,7 +103,6 @@ $opensans-regular: "OpenSans Regular";
 
 .titulo-banner {
   position: absolute;
-  align-items: center;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -94,9 +111,19 @@ $opensans-regular: "OpenSans Regular";
   color: white;
 }
 
+.texto-banner {
+  position: absolute;
+  top: 58%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: $opensans-regular;
+  font-size: 16px;
+  color: white;
+}
+
 //Banner-principal
 
-.banner{
+.banner {
   position: relative;
   width: 100%;
   height: auto;
