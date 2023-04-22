@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /*
 ● Fuentes:
 ○ Títulos: Nunito Black
@@ -18,14 +17,21 @@
 ○ Footer: 14px
 ○ Copyright: 12px
 */
+
+$color-pink: #e21982;
+$color-blue: #22193f;
+$color-gray: #e8e8e8;
+
 @font-face {
   font-family: "Nunito Black";
   src: url("/CSS/fonts/Nunito-Black.ttf") format("truetype");
 }
+
 @font-face {
   font-family: "Nunito Bold";
   src: url("/CSS/fonts/Nunito-Bold.ttf") format("truetype");
 }
+
 @font-face {
   font-family: "Nunito ExtraLight";
   src: url("/CSS/fonts/Nunito-ExtraLight.ttf") format("truetype");
@@ -38,6 +44,28 @@
   font-family: "OpenSans Regular";
   src: url("/CSS/fonts/OpenSans-Regular.ttf") format("truetype");
 }
+
+@mixin botones {
+  $nunito-bold: "Nunito Bold";
+  font-size: 16px;
+  color: white;
+  background-color: $color-pink;
+}
+
+@mixin contenido-banner {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+$nunito-bold: "Nunito Bold";
+$nunito-black: "Nunito Black";
+$nunito-extralight: "Nunito ExtraLight";
+$opensans-bold: "Opensans Bold";
+$opensans-regular: "OpenSans Regular";
+
+//Imágenes, íconos, logos
+
 .logo {
   width: 125px;
   height: 35px;
@@ -47,10 +75,10 @@
   width: 100%;
 }
 
+//Fuentes, títulos, botones
+
 .common-styles {
-  font-size: 16px;
-  color: white;
-  background-color: #e21982;
+  @include botones();
 }
 
 .login-btn {
@@ -58,10 +86,8 @@
   margin-left: 50px;
 }
 
-.banner-btn {
-  position: absolute;
-  left: 50%;
-  transform: translate(-50%, -50%);
+.banner-btn{
+  @include contenido-banner();
   top: 70%;
 }
 
@@ -71,8 +97,8 @@
 }
 
 .nav-link {
-  color: #22193f;
-  font-family: "Nunito Bold";
+  color: $color-blue;
+  font-family: $nunito-bold;
 }
 
 .titulo-banner {
@@ -80,7 +106,7 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-family: "Nunito Black";
+  font-family: $nunito-black;
   font-size: 40px;
   color: white;
 }
@@ -90,10 +116,12 @@
   top: 58%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-family: "OpenSans Regular";
+  font-family: $opensans-regular;
   font-size: 16px;
   color: white;
 }
+
+//Banner-principal
 
 .banner {
   position: relative;
@@ -101,9 +129,11 @@
   height: auto;
 }
 
+//Media Queries
+
 @media (max-width: 767.98px) {
   .btn {
     margin-left: 0;
     margin-top: 15px;
   }
-}/*# sourceMappingURL=prop.css.map */
+}

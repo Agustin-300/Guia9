@@ -15,11 +15,12 @@
   </head>
   <body>
     <header>
-      <nav class="navbar navbar-expand-sm">
+      <nav class="navbar navbar-expand-md">
         <div class="container">
           <a class="navbar-brand" href="#">
-            <img src="./Imagenes/logo.png" alt="Logo" />
+            <img class="logo" src="./Imagenes/logo.png" alt="Logo" />
           </a>
+
           <button
             class="navbar-toggler"
             type="button"
@@ -32,29 +33,55 @@
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <ul class="navbar-nav mt-2 ms-auto">
               <li class="nav-item">
-                <a class="nav-link" href="#">Quienes somos</a>
+                <a class="nav-link me-3" href="#">Quienes somos</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Como funciona</a>
+                <a class="nav-link me-3" href="#">Como funciona</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">FAQ</a>
-              </li>
-              <li> 
-                <button type="button" class="btn">Login</button>
+                <a class="nav-link me-3" href="#">FAQS</a>
               </li>
             </ul>
+            <div>
+              <button
+                type="button"
+                class="btn common-styles login-btn rounded-pill"
+              >
+                Login
+              </button>
+            </div>
           </div>
         </div>
       </nav>
     </header>
 
-    
+    <section class="banner">
+      <div class="container-fluid">
+        <div class="row align">
+          <div class="col">
+            <img
+              class="banner-principal"
+              src="/Imagenes/banner-principal.jpg"
+            />
+            <div class="titulo-banner"><h1>Cada día, mejor</h1></div>
+            <div class="texto-banner">
+              La red más eficiente de profesionales para tu desarrollo y
+              bienestar emocional.
+            </div>
+            <button
+              type="button"
+              class="btn common-styles banner-btn rounded-pill"
+            >
+              Comenzar
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
 
-    <section class="banner"></section>
-    <section class="conocenos"></section>
+    
     <section class="como-funciona"></section>
 
     <script
