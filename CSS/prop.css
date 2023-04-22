@@ -38,18 +38,22 @@
   font-family: "OpenSans Regular";
   src: url("/CSS/fonts/OpenSans-Regular.ttf") format("truetype");
 }
-img {
+.logo {
   width: 125px;
   height: 35px;
 }
 
+.banner-principal {
+  width: 100%;
+}
+
 .btn {
-  background-color: #E21982;
+  background-color: #e21982;
   color: white;
   font-size: 16px;
   width: 100px;
-  font-family: "Nunito Bold";
   margin-left: 50px;
+  font-family: "Nunito Bold";
 }
 
 .btn:hover {
@@ -58,8 +62,25 @@ img {
 }
 
 .nav-link {
-  color: #22193F;
+  color: #22193f;
   font-family: "Nunito Bold";
+}
+
+.titulo-banner {
+  position: absolute;
+  align-items: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: "Nunito Black";
+  font-size: 40px;
+  color: white;
+}
+
+.banner {
+  position: relative;
+  width: 100%;
+  height: auto;
 }
 
 @media (max-width: 767.98px) {
