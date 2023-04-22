@@ -1,4 +1,4 @@
-@charset "UTF-8";
+
 /*
 ● Fuentes:
 ○ Títulos: Nunito Black
@@ -18,19 +18,28 @@
 ○ Footer: 14px
 ○ Copyright: 12px
 */
-img {
-  width: 125px;
-  height: 35px;
+
+
+$color-pink: #E21982;
+$color-blue: #22193F;
+$color-gray: #E8E8E8;
+
+$-Nunito-Bold: @font/
+
+
+img{
+    width: 125px;
+    height: 35px;
 }
 
-.btn {
-  background-color: #E21982;
-  color: white;
-  font-size: 16px;
-  width: 100px;
+.btn{
+    background-color: $color-pink;
+    color: white;
+    font-size: 16px;
+    width: 100px;
 }
 
 .btn:hover {
-  background-color: #a43c74;
-  color: white;
-}/*# sourceMappingURL=prop.css.map */
+    background-color:#a43c74;
+    color: white;
+  }
