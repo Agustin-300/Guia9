@@ -47,6 +47,18 @@
   width: 100%;
 }
 
+.imagen-fondo {
+  background-image: url("/Imagenes/banner-principal.jpg");
+  background-size: cover;
+  padding: 215px 0px;
+}
+
+.iconos {
+  width: 50px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
 .common-styles {
   font-size: 16px;
   color: white;
@@ -88,5 +100,11 @@
   .btn {
     margin-left: 0;
     margin-top: 15px;
+  }
+}
+@media (max-width: 576px) {
+  .imagen-fondo {
+    max-width: 800px;
+    height: 120px;
   }
 }/*# sourceMappingURL=prop.css.map */

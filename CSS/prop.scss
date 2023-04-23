@@ -69,6 +69,17 @@ $opensans-regular: "OpenSans Regular";
   width: 100%;
 }
 
+.imagen-fondo{
+  background-image: url("/Imagenes/banner-principal.jpg");
+  background-size: cover;
+  padding: 215px 0px;
+}
+
+.iconos{
+  width: 50px;
+  object-fit: contain;
+}
+
 //Fuentes, títulos, botones
 
 .common-styles {
@@ -91,8 +102,6 @@ $opensans-regular: "OpenSans Regular";
 }
 
 .titulo-banner {
-  //@include contenido-banner();
-  //top: 50%;
   font-family: $nunito-black;
   font-size: 40px;
   color: white;
@@ -115,4 +124,12 @@ $opensans-regular: "OpenSans Regular";
     margin-left: 0;
     margin-top: 15px;
   }
+}
+
+@media (max-width: 576px) {
+  .imagen-fondo{
+    max-width: 800px;
+    height: 120px;
+  }
+
 }
