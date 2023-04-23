@@ -44,7 +44,7 @@
 }
 
 .banner-principal {
-  width: 100%;
+  max-width: 100%;
 }
 
 .imagen-fondo {
@@ -60,6 +60,7 @@
 }
 
 .common-styles {
+  font-family: "Nunito Bold";
   font-size: 16px;
   color: white;
   background-color: #e21982;
@@ -73,6 +74,10 @@
 .btn:hover {
   background-color: #a43c74;
   color: white;
+}
+
+.btn-medio {
+  border-color: white;
 }
 
 .nav-link {
@@ -92,8 +97,18 @@
   color: white;
 }
 
+.texto-2 {
+  font-size: 23px;
+  color: white;
+  font-family: "Nunito Bold";
+}
+
 .quienes-somos {
   background-color: #e8e8e8;
+}
+
+.banda-rosa {
+  background-color: #e21982;
 }
 
 @media (max-width: 767.98px) {

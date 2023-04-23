@@ -45,18 +45,20 @@ $color-gray: #e8e8e8;
   src: url("/CSS/fonts/OpenSans-Regular.ttf") format("truetype");
 }
 
-@mixin botones {
-  $nunito-bold: "Nunito Bold";
-  font-size: 16px;
-  color: white;
-  background-color: $color-pink;
-}
 
 $nunito-bold: "Nunito Bold";
 $nunito-black: "Nunito Black";
 $nunito-extralight: "Nunito ExtraLight";
 $opensans-bold: "OpenSans Bold";
 $opensans-regular: "OpenSans Regular";
+
+
+@mixin botones {
+  font-family: $nunito-bold;
+  font-size: 16px;
+  color: white;
+  background-color: $color-pink;
+}
 
 //Imágenes, íconos, logos
 
@@ -66,7 +68,7 @@ $opensans-regular: "OpenSans Regular";
 }
 
 .banner-principal {
-  width: 100%;
+  max-width: 100%;
 }
 
 .imagen-fondo{
@@ -96,6 +98,10 @@ $opensans-regular: "OpenSans Regular";
   color: white;
 }
 
+.btn-medio{
+  border-color: white;
+}
+
 .nav-link {
   color: $color-blue;
   font-family: $nunito-bold;
@@ -113,12 +119,21 @@ $opensans-regular: "OpenSans Regular";
   color: white;
 }
 
+.texto-2{
+  font-size: 23px;
+  color: white;
+  font-family: $nunito-bold;
+}
+
+//Secciones
+
 .quienes-somos{
   background-color: $color-gray;
 }
 
-$gutter-x: 1rem;
-
+.banda-rosa{
+  background-color: $color-pink;
+}
 
 //Media Queries
 
