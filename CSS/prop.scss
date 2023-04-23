@@ -45,19 +45,35 @@ $color-gray: #e8e8e8;
   src: url("/CSS/fonts/OpenSans-Regular.ttf") format("truetype");
 }
 
-
 $nunito-bold: "Nunito Bold";
 $nunito-black: "Nunito Black";
 $nunito-extralight: "Nunito ExtraLight";
 $opensans-bold: "OpenSans Bold";
 $opensans-regular: "OpenSans Regular";
 
-
 @mixin botones {
   font-family: $nunito-bold;
   font-size: 16px;
   color: white;
   background-color: $color-pink;
+}
+
+@mixin pre-titulos {
+  font-family: $nunito-extralight;
+  font-size: 12px;
+  color: $color-pink;
+}
+
+@mixin titulos-secundarios {
+  font-family: $nunito-black;
+  font-size: 28px;
+  color: $color-blue;
+}
+
+@mixin texto-general{
+  font-family: $opensans-regular;
+  font-size: 16px;
+  color: $color-blue;
 }
 
 //Imágenes, íconos, logos
@@ -71,13 +87,13 @@ $opensans-regular: "OpenSans Regular";
   max-width: 100%;
 }
 
-.imagen-fondo{
+.imagen-fondo {
   background-image: url("/Imagenes/banner-principal.jpg");
   background-size: cover;
   padding: 215px 0px;
 }
 
-.iconos{
+.iconos {
   width: 50px;
   object-fit: contain;
 }
@@ -98,10 +114,6 @@ $opensans-regular: "OpenSans Regular";
   color: white;
 }
 
-.btn-medio{
-  border-color: white;
-}
-
 .nav-link {
   color: $color-blue;
   font-family: $nunito-bold;
@@ -119,19 +131,54 @@ $opensans-regular: "OpenSans Regular";
   color: white;
 }
 
-.texto-2{
+.pre-titulo {
+  @include pre-titulos();
+}
+
+.titulo-secundario {
+  @include titulos-secundarios();
+}
+
+.texto-1{
+  @include texto-general();
+}
+
+.pre-titulo-2 {
+  @include pre-titulos();
+}
+
+.titulo-secundario-2 {
+  @include titulos-secundarios();
+}
+
+.row-3{
+  font-family: $nunito-black;
+  color: $color-pink;
+}
+
+.row-4{
+  @include texto-general();
+}
+
+//Banda-rosa
+
+.btn-medio {
+  border-color: white;
+}
+
+.texto-2 {
   font-size: 23px;
   color: white;
   font-family: $nunito-bold;
 }
 
-//Secciones
+//Color de fondo Secciones
 
-.quienes-somos{
+.quienes-somos {
   background-color: $color-gray;
 }
 
-.banda-rosa{
+.banda-rosa {
   background-color: $color-pink;
 }
 
@@ -145,9 +192,8 @@ $opensans-regular: "OpenSans Regular";
 }
 
 @media (max-width: 576px) {
-  .imagen-fondo{
+  .imagen-fondo {
     max-width: 800px;
     height: 120px;
   }
-
 }

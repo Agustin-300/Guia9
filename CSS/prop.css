@@ -76,10 +76,6 @@
   color: white;
 }
 
-.btn-medio {
-  border-color: white;
-}
-
 .nav-link {
   color: #22193f;
   font-family: "Nunito Bold";
@@ -95,6 +91,51 @@
   font-family: "OpenSans Regular";
   font-size: 16px;
   color: white;
+}
+
+.pre-titulo {
+  font-family: "Nunito ExtraLight";
+  font-size: 12px;
+  color: #e21982;
+}
+
+.titulo-secundario {
+  font-family: "Nunito Black";
+  font-size: 28px;
+  color: #22193f;
+}
+
+.texto-1 {
+  font-family: "OpenSans Regular";
+  font-size: 16px;
+  color: #22193f;
+}
+
+.pre-titulo-2 {
+  font-family: "Nunito ExtraLight";
+  font-size: 12px;
+  color: #e21982;
+}
+
+.titulo-secundario-2 {
+  font-family: "Nunito Black";
+  font-size: 28px;
+  color: #22193f;
+}
+
+.row-3 {
+  font-family: "Nunito Black";
+  color: #e21982;
+}
+
+.row-4 {
+  font-family: "OpenSans Regular";
+  font-size: 16px;
+  color: #22193f;
+}
+
+.btn-medio {
+  border-color: white;
 }
 
 .texto-2 {
