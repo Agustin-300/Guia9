@@ -70,7 +70,7 @@ $opensans-regular: "OpenSans Regular";
   color: $color-blue;
 }
 
-@mixin texto-general{
+@mixin texto-general {
   font-family: $opensans-regular;
   font-size: 16px;
   color: $color-blue;
@@ -139,7 +139,7 @@ $opensans-regular: "OpenSans Regular";
   @include titulos-secundarios();
 }
 
-.texto-1{
+.texto-1 {
   @include texto-general();
 }
 
@@ -151,12 +151,12 @@ $opensans-regular: "OpenSans Regular";
   @include titulos-secundarios();
 }
 
-.row-3{
+.row-3 {
   font-family: $nunito-black;
   color: $color-pink;
 }
 
-.row-4{
+.row-4 {
   @include texto-general();
 }
 
@@ -195,5 +195,102 @@ $opensans-regular: "OpenSans Regular";
   .imagen-fondo {
     max-width: 800px;
     height: 120px;
+  }
+}
+
+* {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+}
+
+h1 {
+  font-family: "Nunito", sans-serif;
+  font-weight: 900;
+  font-size: 22px;
+  color: #ffffff;
+}
+
+h2 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  font-size: 28px;
+  margin-bottom: 10px;
+  &::first-letter {
+    text-transform: capitalize;
+  }
+}
+
+h3 {
+  font-family: "Nunito", sans-serif;
+  font-weight: 200;
+  font-size: 12px;
+  color: $color-pink;
+  text-transform: uppercase;
+}
+
+body {
+  background-color: $color-gray;
+  .module {
+    margin-bottom: 60px;
+    .container {
+      .custom-padding {
+        padding: 50px 0;
+      }
+      .dropdown-input {
+        .form-control {
+          margin-bottom: 15px;
+          padding: 15px 0px 15px 20px;
+          font-family: "Open Sans", sans-serif;
+          font-weight: 700;
+          &::first-letter {
+            text-transform: uppercase;
+          }
+        }
+      }
+      .ilustration-faqs {
+        display: flex;
+        justify-content: space-around;
+        .ilustration-faqs__img {
+          width: 500px;
+          max-width: 100%;
+        }
+      }
+    }
+  }
+  .banner-secondary {
+    background-image: url("../Imagenes/banner-secundario.jpg");
+    background-size: cover;
+    padding: 130px 0px;
+    h1 {
+      margin-top: 30px;
+    }
+    .btn-danger {
+      &::first-letter {
+        text-transform: uppercase;
+      }
+      margin-top: 15px;
+      border-radius: 100px;
+      font-size: 16px;
+      background-color: $color-pink;
+      font-family: "Nunito", sans-serif;
+      font-weight: 700;
+    }
+  }
+  .footer {
+    background-color: $color-blue-texts-and-footer;
+
+    .snippets {
+      .nav-item {
+        .text-muted {
+          color: #ffffff !important;
+        }
+      }
+    }
+    .copyright {
+      .copyright__p {
+        font-size: 12px;
+        color: #ffffff;
+      }
+    }
   }
 }
